@@ -19,8 +19,17 @@
     }
 
     h1 {
-      font-size: 40px;
+      font-size: 50px;
       margin-bottom: 10px;
+      color: #E1306C;
+      text-shadow: 2px 2px 10px #FF66CC, 0 0 20px #E1306C;
+      animation: neonPulse 1.5s infinite alternate;
+    }
+
+    @keyframes neonPulse {
+      0% { text-shadow: 2px 2px 10px #FF66CC, 0 0 20px #E1306C; }
+      50% { text-shadow: 2px 2px 15px #FF99CC, 0 0 25px #E1306C; }
+      100% { text-shadow: 2px 2px 10px #FF66CC, 0 0 20px #E1306C; }
     }
 
     p {
@@ -96,7 +105,7 @@
 
   <!-- Header -->
   <header>
-    <h1>🎮 Rauedy Gamer</h1>
+    <h1>🎮 _rauedyss</h1>
     <p>Conteúdo gamer, dicas, novidades e muito mais!</p>
 
     <a href="https://instagram.com/_rauedyss" target="_blank" class="btn">
