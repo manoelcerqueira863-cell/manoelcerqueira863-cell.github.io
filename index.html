@@ -46,17 +46,55 @@
       box-shadow: 0 0 20px #E1306C;
     }
 
+    section {
+      padding: 60px 20px;
+    }
+
+    section h2 {
+      font-size: 32px;
+      margin-bottom: 40px;
+    }
+
+    .cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+    }
+
+    .card {
+      background: #222;
+      padding: 20px;
+      border-radius: 15px;
+      width: 250px;
+      text-align: left;
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #E1306C;
+    }
+
+    .card a {
+      color: #E1306C;
+      font-weight: bold;
+      text-decoration: none;
+    }
+
     footer {
       margin-top: 60px;
       padding: 20px;
       font-size: 14px;
       color: #777;
+      background:#111;
     }
   </style>
 </head>
 
 <body>
 
+  <!-- Header -->
   <header>
     <h1>🎮 Rauedy Gamer</h1>
     <p>Conteúdo gamer, dicas, novidades e muito mais!</p>
@@ -67,9 +105,53 @@
       </svg>
       Meu Instagram
     </a>
-
   </header>
 
+  <!-- Projetos -->
+  <section id="projetos">
+    <h2>Meus Projetos</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Projeto Gamer 1</h3>
+        <p>Descrição curta do projeto 1. Pode ser site, app ou qualquer criação.</p>
+        <a href="#">Ver mais</a>
+      </div>
+      <div class="card">
+        <h3>Projeto Gamer 2</h3>
+        <p>Descrição curta do projeto 2. Mostre o que você criou.</p>
+        <a href="#">Ver mais</a>
+      </div>
+      <div class="card">
+        <h3>Projeto Gamer 3</h3>
+        <p>Descrição curta do projeto 3. Pode ser link de site ou vídeo.</p>
+        <a href="#">Ver mais</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Afiliados -->
+  <section id="afiliados" style="background:#111;">
+    <h2>Produtos em Afiliado</h2>
+    <div class="cards">
+      <div class="card">
+        <h3>Mouse Gamer</h3>
+        <p>Mouse com RGB e alta precisão. Link de afiliado abaixo.</p>
+        <a href="#">Comprar</a>
+      </div>
+      <div class="card">
+        <h3>Teclado Mecânico</h3>
+        <p>Teclado mecânico com switches silenciosos. Link de afiliado.</p>
+        <a href="#">Comprar</a>
+      </div>
+      <div class="card">
+        <h3>Fone Gamer</h3>
+        <p>Fone com som surround e microfone ajustável. Link de afiliado.</p>
+        <a href="#">Comprar</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer>
     © 2026 Rauedy Gamer - Todos os direitos reservados
   </footer>
